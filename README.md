@@ -36,7 +36,7 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
 
         install.packages("rjags")
 
-### B) Download this repository
+### B) Clone this repository
 
 ### C) Update the paths in `design_matrix_run1.R` for your data:
 
