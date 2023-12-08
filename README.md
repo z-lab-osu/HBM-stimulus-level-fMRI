@@ -77,3 +77,9 @@ e.g.,
                 do
                 ssub -c "Rscript [path]/m3_osc_roi_args.R $ROI" -A [account] -t 3:00:00 -m 28
                 done
+
+## References:
+
+Molloy, M. F., Bahg, G., Li, X., Steyvers, M., Lu, Z. L., & Turner, B. M. (2018). Hierarchical Bayesian analyses for modeling BOLD time series data. Computational Brain & Behavior, 1, 184-213.
+
+
