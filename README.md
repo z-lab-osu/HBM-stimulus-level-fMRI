@@ -28,9 +28,11 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
 
         module load R	
 
-#### Install R package: 
+#### Install R packages: 
 
         install.packages("R.matlab")
+
+        install.packages("rjags")
 
 ### B) Download this repository
 
