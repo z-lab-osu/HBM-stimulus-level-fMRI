@@ -8,8 +8,6 @@ rows = trial/event
 
 columns = subject
 
-
-
 ### B) Extract timeseries from each region of interest (ROI) & merge all subjects into one file: 
 
 rows = TR
@@ -30,7 +28,9 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
 
         module load R	
 
-#### Install R package: R.matlab
+#### Install R package: 
+
+        install.packages("R.matlab")
 
 ### B) Download this repository
 
@@ -73,5 +73,5 @@ e.g.,
 
                 for ROI in {1..20}
                 do
-                ssub -c "Rscript m3_osc_roi_args.R $ROI" -A [account] -t 3:00:00 -m 28
+                ssub -c "Rscript [path]/m3_osc_roi_args.R $ROI" -A [account] -t 3:00:00 -m 28
                 done
