@@ -18,13 +18,23 @@ columns = subject
 
 ## Step 2: Convolve design matrix with neural data
 
-### A) Install JAGS: https://sourceforge.net/projects/mcmc-jags/
+### A) Install dependencies:
+
+#### JAGS: https://sourceforge.net/projects/mcmc-jags/
 
 Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app1 
 
+#### Load JAGS and R:
+
+        module load jags
+
+        module load R	
+
+#### Install R package: R.matlab
+
 ### B) Download this repository
 
-### C) Update the paths in design_matrix_run1.R for your data:
+### C) Update the paths in `design_matrix_run1.R` for your data:
 
 • cond_path = design matrix including condition for each trial by subject (Step 1A)
 
@@ -40,14 +50,14 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
 
 ### D) Run:
 
-        design_matrix_run1.R
+        [path]/design_matrix_run1.R
 
 **NOTE*: This takes about 50 minutes
 
 
 ## Step 3: Run hierarchical bayesian model (HBM)
 
-### A) Update the paths in m3_osc_roi_args_run1.R for your data:
+### A) Update the paths in `m3_osc_roi_args_run1.R` for your data:
 
 • load path
 
@@ -55,7 +65,7 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
 
 ### B) Run:
         
-        m3_osc_roi_args_run1.R [ROI number]
+        [path]/m3_osc_roi_args_run1.R [ROI number]
 
 **NOTE*: This takes about 2 hours for each ROI, so we suggest looping through ROIs using SLURM/BATCH.
 
