@@ -16,6 +16,8 @@ columns = subject
 
 ## Step 2: Convolve design matrix with neural data
 
+*Code adapted with permission from Molloy et al., 2018.*
+
 ### A) Install dependencies:
 
 #### JAGS: https://sourceforge.net/projects/mcmc-jags/
@@ -58,6 +60,8 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
 
 
 ## Step 3: Run hierarchical bayesian model (HBM)
+
+*Code adapted with permission from Molloy et al., 2018.*
 
 ### A) Update the paths in `m3_osc_roi_args_run1.R` for your data:
 
