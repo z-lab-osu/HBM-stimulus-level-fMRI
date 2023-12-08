@@ -4,7 +4,7 @@
 
 ### A) Create 3 design matrixes: onset time, duration, or condition
 
-rows = stimulus/trial/event
+rows = stimulus (i.e., trial/event)
 
 columns = subject
 
