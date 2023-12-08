@@ -41,7 +41,7 @@ C) Download this repository
 
 D) Run:
 
-        design_matrix_feedback_run1.R
+        design_matrix_run1.R
 
 *NOTE: This takes about 50 minutes
 
