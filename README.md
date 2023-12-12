@@ -41,6 +41,7 @@
         install.packages("rjags")
 
 ### B) Clone this repository
+-  `design_matrix_run1.R` calls on `hrf_functions.R`
 
 ### C) Update the paths in `design_matrix_run1.R` for your data:
 
