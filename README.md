@@ -65,7 +65,7 @@
 *Code adapted with permission from Molloy et al., 2018.*
 
 ### A) Update the paths in `m3_osc_roi_args_run1.R` for your data:
-- load path
+- load path (output from `design_matrix_run1.R`)
 - output path
 
 ### B) Run:
