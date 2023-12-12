@@ -4,25 +4,19 @@
 
 ### A) Define 3 matrices corresponding to the onset time, duration, and condition of the experimental stimuli
 
-rows = stimulus (i.e., trial/event)
+#### .mat structure:
+- rows = stimulus (i.e., trial/event)
+- columns = subject
 
-columns = subject
-
-### B) Extract timeseries from each region of interest (ROI) & merge all subjects into one file: 
+### B) Extract timeseries from each region of interest (ROI) & merge all subjects' runs into one file: 
 
 #### .mat structure:
-
-First level:
-
-row = subject
-
-columns = run
-
-Second level (within each subject for each run):
-
-rows = TR
-
-columns = ROI
+- First level:
+  - row = subject
+  - columns = run
+- Second level (within each subject for each run):
+  - rows = TR
+  - columns = ROI
 
 ## Step 2: Convolve design matrix with neural data
 
@@ -32,7 +26,7 @@ columns = ROI
 
 #### JAGS: https://sourceforge.net/projects/mcmc-jags/
 
-Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app1 
+- Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app1 
 
 #### Load JAGS and R:
 
@@ -50,15 +44,11 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
 
 ### C) Update the paths in `design_matrix_run1.R` for your data:
 
-• cond_path = matrix including condition for each trial by subject (Step 1A)
-
-• dur_path = matrix including duration of each trial by subject (Step 1A)
-
-• onset_path = matrix including onset time for each trial by subject (Step 1A)
-
-• N_path = matrix including timeseries data for each TR by subject (Step 1B) 
-
-• save path
+- cond_path = matrix including condition for each trial by subject (Step 1A)
+- dur_path = matrix including duration of each trial by subject (Step 1A)
+- onset_path = matrix including onset time for each trial by subject (Step 1A)
+- N_path = matrix including timeseries data for each TR by subject (Step 1B) 
+- save path
 
 **NOTE*: The script is currently set up as if all matrices created in Step 1 were generated in matlab and saved as .mat files. If you saved the matrices as a different file type, you will need to update the readMat commands in lines 7, 13, 19, and 27 to commands appropriate for your file type.
 
@@ -74,10 +64,8 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
 *Code adapted with permission from Molloy et al., 2018.*
 
 ### A) Update the paths in `m3_osc_roi_args_run1.R` for your data:
-
-• load path
-
-• output path
+- load path
+- output path
 
 ### B) Run:
         
