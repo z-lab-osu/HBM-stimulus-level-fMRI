@@ -2,7 +2,7 @@
 
 ## Step 1: Data Prep
 
-### A) Create 3 design matrixes: onset time, duration, or condition
+### A) Define 3 matrices corresponding to the onset time, duration, and condition of the experimental stimuli
 
 rows = stimulus (i.e., trial/event)
 
@@ -40,23 +40,23 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
 
 ### C) Update the paths in `design_matrix_run1.R` for your data:
 
-• cond_path = design matrix including condition for each trial by subject (Step 1A)
+• cond_path = matrix including condition for each trial by subject (Step 1A)
 
-• dur_path = design matrix including duration of each trial by subject (Step 1A)
+• dur_path = matrix including duration of each trial by subject (Step 1A)
 
-• onset_path = design matrix including onset time for each trial by subject (Step 1A)
+• onset_path = matrix including onset time for each trial by subject (Step 1A)
 
-• N_path = design matrix including timeseries data for each TR by subject (Step 1B) 
+• N_path = matrix including timeseries data for each TR by subject (Step 1B) 
 
 • save path
 
-**NOTE*: The script is currently set up as if all design matrixes created in Step 1 were generated in matlab and saved as .mat files. If you saved the design matrixes as a different file type, you will need to update the readMat commands in lines  7, 13, 19, and 27 to commands appropriate for your file type.
+**NOTE*: The script is currently set up as if all matrices created in Step 1 were generated in matlab and saved as .mat files. If you saved the matrices as a different file type, you will need to update the readMat commands in lines 7, 13, 19, and 27 to commands appropriate for your file type.
 
 ### D) Run:
 
         [path]/design_matrix_run1.R
 
-**NOTE*: This takes about 50 minutes
+**NOTE*: This takes about 50 minutes (computing environment: Ohio Supercomputer).
 
 
 ## Step 3: Run hierarchical bayesian model (HBM)
@@ -73,7 +73,7 @@ Helpful guide: https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119287995.app
         
         [path]/m3_osc_roi_args_run1.R [ROI number]
 
-**NOTE*: This takes about 2 hours for each ROI, so we suggest looping through ROIs using SLURM/BATCH.
+**NOTE*: This takes about 2 hours for each ROI (computing environment: Ohio Supercomputer), so we suggest looping through ROIs using SLURM/BATCH.
 
 e.g.,
 
