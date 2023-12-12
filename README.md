@@ -51,7 +51,7 @@
 - N_path = matrix including timeseries data for each TR by subject (Step 1B) 
 - save path
 
-**NOTE*: The script is currently set up as if all matrices created in Step 1 were generated in matlab and saved as .mat files. If you saved the matrices as a different file type, you will need to update the readMat commands in lines 7, 13, 19, and 27 to commands appropriate for your file type.
+**NOTE*: The script is currently set up as if all matrices created in Step 1 were generated in MATLAB and saved as .mat files. If you saved the matrices as a different file type, you will need to update the readMat commands in lines 7, 13, 19, and 27 to commands appropriate for your file type.
 
 ### D) Run:
 
