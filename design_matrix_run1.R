@@ -3,19 +3,19 @@
 library('R.matlab')
 
 #load mat files
-cond_path="path/to/condition_matrix.mat"
+cond_path="path/to/cond_run1.mat"
 cond_mat=readMat(cond_path)
 
 cond=matrix(unlist(cond_mat$cond.run1),dim(cond_mat$cond.run1))
 
 #load durations
-dur_path="path/to/duration_matrix.mat"
+dur_path="path/to/dur_run1.mat"
 dur_mat=readMat(dur_path)
 
 dur=matrix(unlist(dur_mat$dur.run1),dim(dur_mat$dur.run1))
 
 #load onsets
-onset_path="path/to/onset_matrix.mat"
+onset_path="path/to/onset_run1.mat"
 onset_mat=readMat(onset_path)
 
 onset=matrix(unlist(onset_mat$onset.run1),dim(onset_mat$onset.run1))
@@ -23,7 +23,7 @@ onset=matrix(as.numeric(onset),dim(onset))
 
 
 #load neural data
-N_path="path/to/timeseries_matrix.mat"
+N_path="path/to/timeseries_run1_run2.mat"
 N_mat=readMat(N_path)
 
 N_all=N_mat$timeseries
