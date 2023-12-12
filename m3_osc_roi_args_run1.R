@@ -101,7 +101,7 @@ print("Saving data...")
 
 setwd("/path/to/save_dir/m3")
 
-save(file=paste(c("run1_output_roi",args[1], "_redo_090822.RData"),sep="",collapse=""),post,cond_num,cond_num_key,m3_out)
+save(file=paste(c("run1_output_roi",args[1], ".RData"),sep="",collapse=""),post,cond_num,cond_num_key,m3_out)
 
 
 
