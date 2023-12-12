@@ -10,9 +10,19 @@ columns = subject
 
 ### B) Extract timeseries from each region of interest (ROI) & merge all subjects into one file: 
 
+#### .mat structure:
+
+First level:
+
+row = subject
+
+columns = run
+
+Second level (within each subject for each run):
+
 rows = TR
 
-columns = subject
+columns = ROI
 
 ## Step 2: Convolve design matrix with neural data
 
