@@ -9,8 +9,6 @@
 - rows = stimulus (i.e., trial/event)
 - columns = subject
 
-- 
-
 ### B) Extract timeseries from each region of interest (ROI) & merge all subjects' runs into one file: 
 
 #### .mat structure:
