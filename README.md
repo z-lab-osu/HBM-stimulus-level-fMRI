@@ -1,12 +1,15 @@
 # HBM-stimulus-level-fMRI
 
 ## Step 1: Data Prep
+*See examples in 'example matrices' folder of this repository.*
 
 ### A) Define 3 matrices corresponding to the onset time, duration, and condition of the experimental stimuli
 
 #### .mat structure:
 - rows = stimulus (i.e., trial/event)
 - columns = subject
+
+- 
 
 ### B) Extract timeseries from each region of interest (ROI) & merge all subjects' runs into one file: 
 
